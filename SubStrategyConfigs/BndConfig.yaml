@@ -1,0 +1,55 @@
+times_to_use:
+ - 1
+ - 2
+ - 3
+#  - 4
+#  - 5
+ - 10
+#  - 20
+#  - 63
+ - 126
+#  - 252
+
+aliases_to_use:
+  - "sp"
+  - "bnd"
+  # - "re"
+  # - "jp"
+  # - "eu"
+  # - "gld"
+  # - "jst"
+  # - "est"
+  # - "emr"
+  # - "rut"
+  # - "mid"
+  # - "sml"
+
+
+not_to_use:
+  - "" # empty
+  # - "sp_-63_dys"
+  # - "sp_-252_dys"
+  # - sp_-20_dys"
+  # - "sp_-10_dys"
+  # - "sp_-126_dys"
+
+baseline_asset: "sp"
+
+asset_to_test: "bnd"
+
+pred_distance: 1
+
+diff: False
+
+# just set to 100 if you want all data
+test_data_years_back: 6
+
+#inclusive
+start_year: 2006
+
+#exclusive - maybe not anymore?
+end_year: 2022
+
+database_file_path: '../../Data/AllData.csv'
+
+results_file_path: '../../Data/results.csv'

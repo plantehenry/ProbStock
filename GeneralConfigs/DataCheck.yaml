@@ -1,0 +1,17 @@
+
+aliases_to_use:
+  - "sp"
+  - "bnd"
+  - "re"
+  - "jp"
+  - "eu"
+  - "gld"
+  - "jst"
+  - "est"
+  - "emr"
+  - "rut"
+  - "mid"
+  - "sml"
+
+
+database_file_path: '../Data/AllData.csv'

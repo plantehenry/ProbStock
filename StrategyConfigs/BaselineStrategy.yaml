@@ -1,0 +1,28 @@
+InitialValue: 1
+
+Strategy:
+
+ - logic_type: "AlwaysZero"
+   logic_vars: []
+   base_path_for_pred_configs: ""
+   file_path_for_pred_configs: ["BaselineConfig"]
+   days_to_hold: 1
+   asset_to_hold: 'bnd'
+
+BaselineAsset: 'sp'
+
+Assets:
+  - "sp"
+  - "bnd"
+  - "re"
+  - "jp"
+  - "eu"
+  - "gld"
+  - "jst"
+  - "est"
+  - "emr"
+  - "rut"
+  - "mid"
+  - "sml"
+
+AllDataPath: '../../Data/AllData.csv'

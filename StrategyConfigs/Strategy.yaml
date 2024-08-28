@@ -1,0 +1,59 @@
+InitialValue: 1
+
+Strategy:
+ - logic_type: "BasicOne"
+   logic_vars: []
+   base_path_for_pred_configs: ""
+   file_path_for_pred_configs: ["TestConfig"]
+   days_to_hold: 20
+   asset_to_hold: 'gld'
+
+  ## need a scale factor overrid -> even though yo divide by 20 your predicitons are 20 tiume bigger and nnow you have 20 of them so  you need to divide by 20 again probably
+#  - logic_type: "BasicOne"
+#    logic_vars: []
+#    base_path_for_pred_configs: ""
+#    file_path_for_pred_configs: ["SmlConfig"]
+#    days_to_hold: 1
+#    asset_to_hold: 'sml'
+#  - logic_type: "BasicOne"
+#    logic_vars: []
+#    base_path_for_pred_configs: ""
+#    file_path_for_pred_configs: ["EmrConfig"]
+#    days_to_hold: 1
+#    asset_to_hold: 'emr'
+ - logic_type: "BasicOne"
+   logic_vars: []
+   base_path_for_pred_configs: ""
+   file_path_for_pred_configs: ["EmrConfig"]
+   days_to_hold: 1
+   asset_to_hold: 'emr'
+ - logic_type: "BasicOne"
+   logic_vars: []
+   base_path_for_pred_configs: ""
+   file_path_for_pred_configs: ["MidConfig"]
+   days_to_hold: 1
+   asset_to_hold: 'mid'
+#  - logic_type: "BasicOne"
+#    logic_vars: []
+#    base_path_for_pred_configs: ""
+#    file_path_for_pred_configs: ["BndConfig"]
+#    days_to_hold: 1
+#    asset_to_hold: 'bnd'
+
+BaselineAsset: 'sp'
+
+Assets:
+  - "sp"
+  - "bnd"
+  - "re"
+  - "jp"
+  - "eu"
+  - "gld"
+  - "jst"
+  - "est"
+  - "emr"
+  - "rut"
+  - "mid"
+  - "sml"
+
+AllDataPath: '../../Data/AllData.csv'

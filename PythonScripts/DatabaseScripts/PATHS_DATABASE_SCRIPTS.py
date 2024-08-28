@@ -1,0 +1,1 @@
+PATH_TO_DATABASE_CONFIG: str = '../../GeneralConfigs/DatabaseConfig.yaml'

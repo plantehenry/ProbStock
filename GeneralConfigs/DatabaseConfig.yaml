@@ -1,0 +1,53 @@
+path: "../../Data/"
+baseline_asset: "sp"
+
+cor_days_out: [-1, -2, -3, -4, -5, -10, -15, -20, -63, -126, -252, 1, 2, 3, 4, 5, 10, 20]
+
+data:
+  - alias: "sp"
+    file: "SPY"
+    div: "SPYDividend"
+
+  - alias: "re"
+    file: "IYR"
+    div: "IYRDividend"
+
+  - alias: "bnd"
+    file: "isharesBondIndexSince2003"
+    div: "USAggBondDividend"
+
+  - alias: "eu"
+    file: "USD_EURHistoricalData"
+    div: null
+
+  - alias: "jp"
+    file: "USD_JPYHistoricalData"
+    div: null
+
+  - alias: "gld"
+    file: "GoldFuturesHistoricalData"
+    div: null
+
+  - alias: "mid"
+    file: "IJH"
+    div: "IJHDividend"
+
+  - alias: "sml"
+    file: "IJR"
+    div: "IJRDividend"
+
+  - alias: "rut"
+    file: "IWM"
+    div: "IWMDividend"
+
+  - alias: "est"
+    file: "EZU"
+    div: "EZUDividend"
+
+  - alias: "emr"
+    file: "EEM"
+    div: "EEMDividend"
+
+  - alias: "jst"
+    file: "EWJ"
+    div: "EWJDividend"
